@@ -5,12 +5,6 @@ const toaster = createToaster({
 });
 import login from "../pages/auth/login.vue";
 import dashboard from "../pages/dashboard.vue";
-import listProduct from "../pages/products/listProduct.vue";
-import listCustomer from "../pages/customers/listCustomer.vue";
-import listSupplier from "../pages/suppliers/listSupplier.vue";
-import listOrder from "../pages/orders/listOrder.vue";
-import addOrder from "../pages/orders/addOrder.vue";
-
 
 const routes = [
   {
@@ -25,38 +19,7 @@ const routes = [
     component: dashboard,
     meta: { requiresAuth: true },
   },
-  {
-    path: '/listproduct',
-    name: 'listProduct',
-    component: listProduct,
-    meta: { requiresAuth: true },
-  },
-  {
-    path: '/listcustomer',
-    name: 'listCustomer',
-    component: listCustomer,
-    meta: { requiresAuth: true },
-  },
-  {
-    path: '/listsupplier',
-    name: 'listSupplier',
-    component: listSupplier,
-    meta: { requiresAuth: true },
-  },
-
-  {
-    path: '/listorder',
-    name: 'listOrder',
-    component: listOrder,
-    meta: { requiresAuth: true },
-  },
-
-  {
-    path: '/addorder',
-    name: 'addOrder',
-    component: addOrder,
-    meta: { requiresAuth: true },
-  },
+  
 
 ];
 
